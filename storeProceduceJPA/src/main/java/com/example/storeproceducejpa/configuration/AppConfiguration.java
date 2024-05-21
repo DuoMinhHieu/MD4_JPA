@@ -28,7 +28,7 @@ import java.util.Properties;
 @Configuration
 @EnableWebMvc
 @EnableTransactionManagement
-@ComponentScan("com.example.store_proceduce_jpa")
+@ComponentScan("com.example.storeproceducejpa")
 public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAware {
     private ApplicationContext applicationContext;
     @Override
@@ -69,7 +69,7 @@ public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAwa
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/store_proceduce_JPA");
         dataSource.setUsername("root");
-        dataSource.setPassword("123456");
+        dataSource.setPassword("Minhhieu@123");
         return dataSource;
     }
     @Bean
